@@ -1,13 +1,14 @@
 
+<script>
+import 'bootstrap/dist/css/bootstrap.min.css';
 
+</script>
 <template>
   <div class="slide">
     <div class="overlay-text">
       <h3>Sea Chontpaisalkul</h3>
       <Router-link to="/act" button type="button"  > Activities </Router-link>
       <Router-link to="/about" button type="button"  > About me </Router-link>
-
-
    </div>
 
     <figure>
@@ -152,18 +153,4 @@
     color: white; /* เปลี่ยนสีลิงก์เมื่อชี้ */
 }
 
-.overlay-text button {
-    margin-top: 5px; /* เพิ่มระยะห่างระหว่างข้อความและปุ่ม */
-    padding: 20px 30px; /* ขนาดปุ่ม */
-    font-size: 1.5rem; /* ขนาดข้อความในปุ่ม */
-    border-radius: 10px; /* ความโค้งมนของปุ่ม */
-    transition: all 0.3s ease; /* เพิ่มเอฟเฟกต์เมื่อชี้ */
-    color: rgb(228, 228, 228);
-    margin: 20px;
-}
-
-.overlay-text button:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* เปลี่ยนสีเมื่อชี้ */
-    color: rgb(245, 245, 245);
-}
 </style>
