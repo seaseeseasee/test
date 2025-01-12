@@ -748,7 +748,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
 .navbar-brand {
   font-weight: bold;
-  color: #007bff;
+  color: #000000;
   text-decoration: none;
 }
 

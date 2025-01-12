@@ -6,9 +6,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 <template>
   <div class="slide">
     <div class="overlay-text">
-      <h3>Sea Chontpaisalkul</h3>
-      <Router-link to="/act" button type="button"  > Activities </Router-link>
-      <Router-link to="/about" button type="button"  > About me </Router-link>
+      <h1>Sea Chontpaisalkul</h1>
+      <div class="nav-links">
+        <a href="/about" class="nav-link">About</a>
+        <a href="/act" class="nav-link">Activities</a>
+        
+      </div>
+
    </div>
 
     <figure>
@@ -89,26 +93,58 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 }
 
 /* ข้อความตรงกลาง */
+.nav-links {
+    display: flex; /* จัดเรียงลูกในแนวนอน */
+    justify-content: center; /* จัดให้อยู่ตรงกลาง */
+    gap: 20px; /* เพิ่มระยะห่างระหว่างลิงก์ */
+    margin-top: 20px; /* เพิ่มระยะห่างระหว่างหัวข้อกับลิงก์ */
+}
+
+.nav-link {
+    color: #fafafa; /* สีข้อความ */
+    font-weight: bold; /* ทำให้ข้อความหนา */
+    font-size: 2rem; /* ปรับขนาดข้อความ */
+    text-decoration: none; /* ลบเส้นใต้ */
+    transition: color 0.3s ease-in-out; /* เพิ่มเอฟเฟกต์นุ่มนวล */
+}
+
+.nav-link:hover {
+    color: #000000; /* เปลี่ยนสีข้อความเมื่อโฮเวอร์ */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* เพิ่มเงาเมื่อโฮเวอร์ */
+    cursor: pointer; /* เปลี่ยนเป็นมือชี้ */
+}
+
 
 .overlay-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: rgb(255, 255, 255)!important;
     z-index: 2;
     text-align: center;
     font-size: 3rem;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif; /* ใช้ฟอนต์ที่ทันสมัย */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     padding: 20px 40px;
-    background-color: rgba(50, 124, 221, 0.5);
+    background: linear-gradient(135deg, rgba(217, 86, 221, 0.7), rgba(44, 153, 196, 0.7));
     border-radius: 20px;
     display: inline-block;
     max-width: 90%;
-    padding: 10px 40px; /* เพิ่มพื้นที่ภายในกรอบ */
-    background-color: rgba(23, 73, 92, 0.5); /* เพิ่มพื้นหลังโปร่งแสง */
+    letter-spacing: 1.5px;
+    line-height: 1.4;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
 }
+
+
+.overlay-text:hover {
+    transform: translate(-50%, -50%) scale(1.05); /* ขยายเล็กน้อยเมื่อโฮเวอร์ */
+    background: linear-gradient(135deg, rgba(143, 185, 219, 0.8), rgba(28, 103, 136, 0.8)); /* เปลี่ยนสีพื้นหลัง */
+    text-shadow: 3px 3px 8px rgba(245, 240, 240, 0.9);
+}
+
 
 @keyframes sea {
     0% { left: 0%; }

@@ -11,16 +11,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
           <Router-link to="/" button type="button"  >
                 <img src="/public/img/home.png" alt="Logo" width="25" height="24" class="d-inline-block align-text-top">
             </Router-link>
-            <ul class="nav nav-pills ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading1">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading2">Skills</a>
-                </li>
+            <div class="nav-link2">
+    <ul class="nav nav-pills ms-auto">
+        <li class="nav-item">
+            <a class="nav-link2" href="#scrollspyHeading1">About </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link2" href="#scrollspyHeading2">Skills</a>
+        </li>
+    </ul>
+</div>
 
-
-            </ul>
         </div>
     </nav>
 
@@ -37,7 +38,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                 <a href="https://www.instagram.com/sea_chontipaikun/">
                     <img src="/public/img/instagram.png" alt="Instagram Logo">
                 </a>
-                <a href="indet.html">
+                <a href="https://github.com/seaseeseasee">
                     <img src="/public/img//github.png" alt="GitHub Logo">
                 </a>
             </div>
@@ -198,6 +199,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
     color: #0a0808; /* ข้อความสีขาว */
 }
 
+
 .about-container {
     display: flex;
     justify-content: space-between;
@@ -230,7 +232,7 @@ p {
 hr {
     margin: 20px 0;
     border: none;
-    border-top: 1px solid #ffffff;
+    border-top: 1px solid #0f0c0c;
 }
 
 .education-item {
@@ -315,6 +317,24 @@ hr {
 /* เพิ่มความห่างระหว่าง logo และลิงก์ */
 .navbar img {
     margin-right: 100px; /* ปรับระยะห่างจาก logo */
+}
+
+.nav-link2 {
+    color: #333333; /* สีข้อความเริ่มต้น */
+    font-weight: bold; /* ทำให้ข้อความดูเด่น */
+    font-size: 1.8rem; /* ปรับขนาดข้อความให้เหมาะสม */
+    text-decoration: none; /* ลบเส้นใต้ */
+    transition: all 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงที่นุ่มนวล */
+    padding: 10px 15px; /* เพิ่มพื้นที่ภายในข้อความ */
+    border-radius: 5px; /* เพิ่มมุมโค้ง */
+    display: inline-block; /* ทำให้ดูเหมือนปุ่ม */
+}
+
+.nav-link2:hover {
+    color: #ffffff; /* เปลี่ยนสีข้อความเมื่อโฮเวอร์ */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* เพิ่มเงาเมื่อโฮเวอร์ */
+    transform: scale(1.1); /* เพิ่มขนาดเล็กน้อยเมื่อโฮเวอร์ */
+    cursor: pointer; /* เปลี่ยนเป็นมือชี้ */
 }
 
 
