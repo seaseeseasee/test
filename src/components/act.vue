@@ -25,9 +25,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'
           <li class="nav-item">
             <Router-link to="/about" class="nav-link px-3">About</Router-link>
           </li>
-          <li class="nav-item">
-            <Router-link to="/contact" class="nav-link px-3">Contact</Router-link>
-          </li>
+        
         </ul>
       </div>
     </div>

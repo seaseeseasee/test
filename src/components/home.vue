@@ -7,9 +7,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
   <div class="slide">
     <div class="overlay-text">
       <h1>Sea Chontpaisalkul</h1>
-      <div class="nav-links">
-        <a href="/about" class="nav-link">About</a>
-        <a href="/act" class="nav-link">Activities</a>
+        <div class="nav-links">
+    <button @click="$router.push('/about')" class="nav-link">About</button>
+    <button @click="$router.push('/act')" class="nav-link">Activities</button>
+
+
         
       </div>
 
