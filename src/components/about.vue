@@ -77,6 +77,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
         </div>
 
     </div>
+
+    <!-- Skills Section -->
     <div class="skills-section">
         <h2 id="scrollspyHeading2">Skills</h2>
         <div class="skills-grid">
@@ -117,6 +119,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
       </div>
 </body>
 </template>
+
 <style>
         * {
             margin: 0;
@@ -194,6 +197,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 .about-container {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-between;
     padding: 50px 100px;
     gap: 20px;

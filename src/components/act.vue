@@ -779,4 +779,20 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 .shadow-sm {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand span {
+    font-size: 1.2rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+}
 </style>
